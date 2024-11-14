@@ -1,0 +1,10 @@
+/* Web Font */
+@font-face {
+  font-family: "NotoSans-R";
+  src: url("./NotoSans-R.woff2") format("woff2");
+  font-display: swap;
+}
+
+body {
+  font-family: "NotoSans-R", "Hiragino Sans", "Meiryo", sans-serif;
+}
