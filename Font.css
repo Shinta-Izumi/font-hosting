@@ -1,13 +1,44 @@
 /* Web Font */
 @font-face {
-  font-family: "NotoSans-R";
-  src: url("https://shinta-izumi.github.io/font-hosting/NotoSans-R.woff2") format("woff2"); /* 絶対パス */
-  font-display: swap;
+    font-family: "NotoSans-R";
+    src: url("https://shinta-izumi.github.io/font-hosting/NotoSans-R.woff2") format("woff2");
+    font-display: swap;
 }
 
-/* サーバーのテキスト用スタイル */
-body, table, td, th, .target-text {
-  font-family: "NotoSans-R", "Hiragino Sans", "Meiryo", sans-serif !important;
-  font-size: 1em !important; /* ベースのサイズにリセット */
-  line-height: normal !important; /* 行間をリセット */
+/* 基本のフォント適用 (全体のベース) */
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, code, del, dfn, em, img, q, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+    font-family: "NotoSans-R", "Hiragino Sans", "Meiryo", sans-serif;
+    font-size: 1em;
+    line-height: 1.5;
+    font-weight: normal;
+    color: #333; /* 基本の文字色 */
+}
+
+/* body のフォントとサイズの設定 */
+body {
+    font-size: 14px; /* 全体のベースサイズ */
+    line-height: 1.5;
+    background: #fff;
+}
+
+/* 特定のテーブルやパネルの設定 (必要に応じて上書き) */
+.paneltable th, .paneltableInside th, .paneltable_blue th, .paneltable_red th {
+    font-family: "游明朝 Demibold", "ヒラギノ明朝 ProN W6", "HiraMinProN-W6", "HG明朝E", "ＭＳ Ｐ明朝", "MS PMincho", "MS 明朝", serif;
+    font-weight: normal;
+    color: #fff;
+    background: linear-gradient(to bottom, #949494 0%, #707070 100%);
+    line-height: 1.0;
+    font-size: 14px;
+    text-shadow: 0 0 4px #000, 0 0 2px #000;
+    text-align: center;
+    padding: 0px;
+    height: 23px;
+    vertical-align: middle;
+}
+
+/* リセットスタイル */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
