@@ -1,10 +1,13 @@
 /* Web Font */
 @font-face {
   font-family: "NotoSans-R";
-  src: url("./NotoSans-R.woff2") format("woff2");
+  src: url("https://shinta-izumi.github.io/font-hosting/NotoSans-R.woff2") format("woff2"); /* 絶対パス */
   font-display: swap;
 }
 
-body {
-  font-family: "NotoSans-R", "Hiragino Sans", "Meiryo", sans-serif;
+/* サーバーのテキスト用スタイル */
+body, table, td, th, .target-text {
+  font-family: "NotoSans-R", "Hiragino Sans", "Meiryo", sans-serif !important;
+  font-size: 1em !important; /* ベースのサイズにリセット */
+  line-height: normal !important; /* 行間をリセット */
 }
